@@ -20,7 +20,7 @@ LoongEnv-Assets 的目标：把工业机器人“设计–建模–控制–实�
 
 ---
 
-## 2. 资产类型（建议枚举）
+## 2. 资产类型
 
 - robot_variant：机型/构型
 - geometry_pkg：几何与装配
@@ -32,41 +32,7 @@ LoongEnv-Assets 的目标：把工业机器人“设计–建模–控制–实�
 - test_report：测试报告
 ---
 
-## 3. manifest.json 模板（MVP）
-
-{
-  "asset_id": "loong.dynamics_pkg.ER15_1400.00001234",
-  "type": "dynamics_pkg",
-  "name": "ER15-1400 Dynamics Package",
-  "version": "1.0.0",
-  "status": "draft",
-  "checksum": "sha256:...",
-  "depends_on": [
-    "loong.geometry_pkg.ER15_1400.00000321@1.0.0",
-    "loong.robot_variant.ER15_1400.00000077@1.0.0"
-  ],
-  "artifacts": [
-    { "role": "model_urdf", "path": "artifacts/model.urdf" },
-    { "role": "dyn_yaml",   "path": "artifacts/dynamics.yaml" },
-    { "role": "id_report",  "path": "reports/identification_report.pdf" }
-  ],
-  "quality": {
-    "verifier": "",
-    "method": "",
-    "confidence": 0.0,
-    "notes": ""
-  },
-  "audit": {
-    "created_by": "",
-    "created_at": "",
-    "approved_by": "",
-    "approved_at": ""
-  }
-}
-
----
-
-## 4. 质量门禁（建议最小规则）
+## 3. 质量门禁（建议最小规则）
 
 自动校验建议（按类型）：
 - URDF/MJCF：关节链合法、惯量正定/半正定、单位一致
@@ -75,7 +41,7 @@ LoongEnv-Assets 的目标：把工业机器人“设计–建模–控制–实�
 
 ---
 
-## 6. 与 LoongEnv 模块的接口约定（概念级）
+## 4. 与 LoongEnv 模块的接口约定（概念级）
 
 - Studio：产出 task_template / controller_profile / limits_pkg
 - Twin：消费 robot_variant + scene_pkg + trajectory；产出 dataset / test_report
