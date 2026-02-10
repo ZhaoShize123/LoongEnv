@@ -1,0 +1,14 @@
+{
+  "asset_id": "loong.dynamics_pkg.ER15_1400",
+  "type": "dynamics_pkg",
+  "name": "ER15-1400 动力学/标定参数",
+  "version": "1.0.0",
+  "status": "draft",
+  "checksum": "",
+  "depends_on": ["loong.robot_variant.ER15_1400@1.0.0"],
+  "artifacts": [
+    { "role": "dyn_table", "path": "artifacts/ER15机器人动力学参数.xlsx" }
+  ],
+  "quality": { "verifier": "", "method": "review", "confidence": 0.0, "notes": "" },
+  "audit": { "created_by": "", "created_at": "", "approved_by": "", "approved_at": "" }
+}
