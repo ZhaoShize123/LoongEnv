@@ -50,6 +50,22 @@
   <img src="assets/loongEnvTask.png" alt="loongEnv Task" width="800"/>
 </p>
 
+
+## 工业机器人数字资产库（LoongEnv-Assets）
+
+LoongEnv-Assets 用于把“机-电-控”全流程产生的关键对象做成**可复用、可追溯、可验证**的数字资产，
+作为 LoongEnv 全链路的统一数据底座（Single Source of Truth）。
+
+**资产是什么？** 在 LoongEnv 里，资产不仅是文件，更是带版本、依赖和质量状态的“工程对象”，典型包括：
+- 机型/构型（robot variant）、几何与装配（mesh/frames）、动力学与标定（mass/inertia/friction）
+- 约束与控制配置（limits/controller profile）、场景与工位（scene）、任务模板（task template）
+- 几何路径/可执行轨迹（path/trajectory）、仿真/实测数据集（dataset）、测试报告与证据包（report/evidence）
+
+**为什么需要资产库？** 因为“设计→仿真→控制→实机→监控”闭环里任何结果都必须能回答：
+这条轨迹/这份报告用的是哪版模型？哪版约束？哪份数据？——从而实现复现、审计与工程化交付。
+
+详细规范见：docs/digital_asset_library.md
+
 ## 支撑平台
 
 👉 组建工业机器人底座技术创新研究院（哈尔滨）
