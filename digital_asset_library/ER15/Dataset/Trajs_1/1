@@ -1,3 +1,0 @@
-offlinetraj_pos.txt 关节位置指令  rpos 关节实际位置
-offlinetraj_vel.txt 关节指令速度   rvel 关节实际速度
-offlinetraj_rtor.txt 关节实际力矩
